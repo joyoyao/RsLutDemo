@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/laputan/AndroidWorkPlace/AndroidStudioWorkPlace/RsLutDemo/app/build/intermediates/exploded-aar/com.android.support/design/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="e5c61a3169221a89654ffcaaed47bba51cf071ad">
+        <dex dex="/Users/laputan/AndroidWorkPlace/AndroidStudioWorkPlace/RsLutDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.0.1_4579f91b06bd7bc0c3c90b28423a806ab99485ee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/laputan/AndroidWorkPlace/AndroidStudioWorkPlace/RsLutDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="/Users/laputan/AndroidWorkPlace/AndroidStudioWorkPlace/RsLutDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.0.1_dcec36e2f264f7c95b09d433210e1aa8f44b69c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/laputan/AndroidWorkPlace/AndroidStudioWorkPlace/RsLutDemo/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.0.1/jars/libs/internal_impl-23.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
+        <dex dex="/Users/laputan/AndroidWorkPlace/AndroidStudioWorkPlace/RsLutDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.0.1_fe7ddde1e6a641c4c68d71cbffff79a4395d9590/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/laputan/AndroidWorkPlace/AndroidStudioWorkPlace/RsLutDemo/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="/Users/laputan/AndroidWorkPlace/AndroidStudioWorkPlace/RsLutDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.0.1_ce399be3d71ec47d98d7921094e49da4280546ce/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/laputan/AndroidWorkPlace/AndroidStudioWorkPlace/RsLutDemo/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="5dc4f350b056054ba15ff536e56a0ef1171f5769">
+        <dex dex="/Users/laputan/AndroidWorkPlace/AndroidStudioWorkPlace/RsLutDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_4cf2abc135c124ea0387ce6b5efe491bba40efc7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/laputan/AndroidWorkPlace/AndroidStudioWorkPlace/RsLutDemo/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3525fde5c939d12157bbfee4d92193bfc2c372df">
+        <dex dex="/Users/laputan/AndroidWorkPlace/AndroidStudioWorkPlace/RsLutDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_75e17124f678271efbfaba01c95363cb46873d99/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/laputan/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.0.1/support-annotations-23.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="/Users/laputan/AndroidWorkPlace/AndroidStudioWorkPlace/RsLutDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.0.1_7421707edda7d993c51b8281ffd7917e5f8311f8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/laputan/Library/Android/sdk/build-tools/23.0.1/renderscript/lib/renderscript-v8.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="23.0.1"
+        sha1="762016371811e15a66e97cf27f3e852bf287aaf3">
+        <dex dex="/Users/laputan/AndroidWorkPlace/AndroidStudioWorkPlace/RsLutDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10/renderscript-v8_615c24d4fa350460c56dc8a60432e70d9bf2237c/classes.dex" />
+    </item>
+
+</items>
