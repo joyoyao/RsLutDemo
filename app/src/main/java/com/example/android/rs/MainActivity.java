@@ -26,7 +26,6 @@ import android.support.v8.renderscript.Element;
 import android.support.v8.renderscript.RenderScript;
 import android.support.v8.renderscript.ScriptIntrinsic3DLUT;
 import android.support.v8.renderscript.Type;
-import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 
@@ -81,33 +80,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             int redDim, greenDim, blueDim;
             int w, h;
             int[] lut;
-
-
-            for(int y=0;y<512;y++){
-
-
-                for(int x=0;x<512;x++){
-
-                     if(y<3){
-                         int timex=x/64;
-
-                         int remainderx=x%64;
-
-                         int timey=y/8;
-                         int remaindery=y%8;
-
-                         Log.i("tagtimex","timex"+timex+"remainderx"+remainderx+"timey"+timey+"remaindery"+remaindery);
-                         int count=(remainderx*64+timex + remaindery*8+timey*512);
-                         Log.i("tagtimex","timex"+count);
-
-                         Log.i("tagtimex","timex"+count%512+"/"+count/512);
-                     }
-
-
-                }
-
-            }
-
             if (mScriptlut == null) {
                 mScriptlut = ScriptIntrinsic3DLUT.create(mRs, Element.U8_4(mRs));
             }
@@ -120,15 +92,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mAllocIn = Allocation.createFromBitmap(mRs, mBitmap);
                 mAllocOut = Allocation.createFromBitmap(mRs, mOutputBitmap);
             }
-            long start = System.currentTimeMillis();
             Type.Builder tb = new Type.Builder(mRs, Element.U8_4(mRs));
             tb.setX(64).setY(64).setZ(64);
             Type t = tb.create();
             mAllocCube = Allocation.createTyped(mRs, t);
             if (mFilter != 0) {
-
                 mLutBitmap = BitmapFactory.decodeResource(getResources(), mLut3D[mFilter - 1]);
-                start = System.currentTimeMillis();
 //                w = mLutBitmap.getWidth();
 //                h = mLutBitmap.getHeight();
 //                redDim = w / h;
@@ -221,8 +190,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mAllocCube.copyFromUnchecked(lut2);
 
             } else {
-                start = System.currentTimeMillis();
-                // identity filter provided for refrence
                 redDim = greenDim = blueDim = 64;
                 int i = 0;
 //                512*512 == 64 * 64 * 64
@@ -242,18 +209,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 mAllocCube.copyFromUnchecked(lut);
             }
             long end2 = System.currentTimeMillis();
-            Log.i("ScriptIntrinsic3DLUT", "处理时间：" + (end2 - start) + "毫秒");
-
-
-
-
             mScriptlut.setLUT(mAllocCube);
             mScriptlut.forEach(mAllocIn, mAllocOut);
-
             mAllocOut.copyTo(mOutputBitmap);
-
             long end = System.currentTimeMillis();
-            Log.i("ScriptIntrinsic3DLUT", "运行时间：" + (end - start) + "毫秒");
             return null;
         }
 
